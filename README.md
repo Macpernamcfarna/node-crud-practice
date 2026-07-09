@@ -19,7 +19,7 @@ This API separates route definitions from the actual business logic to ensure ma
 [Client Request] ──> [index.js (App Instance + express.json())] 
                             └──> [routes/users.js (Router Parameter Mapping)]
                                          └──> [controllers/users.js (Business Logic)]
-```
+
 🛠️ Tech Stack & Key Modules
 Runtime: Node.js (v24.x)
 
@@ -39,15 +39,6 @@ api_project/
 ├── package.json         # Directives blueprint, dependency manifest, and running scripts
 ├── package-lock.json    # Strict dependency lock tree tracking
 └── .gitignore           # Safeguard configuration file hiding node_modules from Git
-🚦 REST API Endpoints Matrix
-All endpoints are relative to the base URL: http://localhost:5000/users
-
-Method	Endpoint	Description	Payload (JSON)	Success Status
-GET	/users	Fetch all users in the array data store	None	200 OK
-POST	/users	Create a new user with an auto-assigned UUID	firstName, lastName, age	200 OK
-GET	/users/:id	Fetch details of a single user by their unique ID	None	200 OK / 404
-DELETE	/users/:id	Drop a specific user completely from data store	None	200 OK
-PATCH	/users/:id	Dynamically update specific keys of a user	Optional firstName, lastName, age	200 OK / 404
 
 📦 JSON Payload Formats
 1. Creating a User (POST /users)
