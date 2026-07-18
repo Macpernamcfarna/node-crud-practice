@@ -52,6 +52,16 @@ Follow these sequential terminal commands to replicate the runtime environment o
 
 1. Prerequisites
 Ensure you have the latest long-term support version of Node.js installed on your workstation.
+Before running this project, make sure you have the following installed:
+
+- **Node.js** (includes npm — Node Package Manager)
+- **npm** (used to install and manage project dependencies)
+
+You can verify your installation by running:
+
+```bash
+node -v
+npm -v
 
 2. Dependency Ingestion
 Clone the repository to your desktop, shift into the folder context, and ingest the module matrix:
